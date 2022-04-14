@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+/* Resources */
+:root {
+    --main-light-blue: rgb(124, 166, 233);
+    --main-dark-blue: rgb(21, 34, 53);
+    --main-black: rgb(34, 34, 34);
+    --main-white: rgb(255, 255, 255);
+    --main-ff: 'Roboto', sans-serif;
+    --secondary-ff: 'Open Sans', sans-serif;    
+}
+/* Box sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: var(--main-ff);
+    background-color: #F1f5f8;
+    color: var(--main-white);
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Nav bar styling */
+nav {
+    background: var(--main-white);
+    display: grid;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    height: 3rem;
+}
+nav h2 {
+    color: var(--main-light-blue);
+    margin-bottom: 0;
+    letter-spacing: .25rem;
+}
+nav a {
+    margin-right: 1rem;
+    color: var(--main-dark-blue);
+    font-family: var(--secondary-ff);
+    font-weight: 700;
+    letter-spacing: .25rem;
+    cursor: pointer;
+}
+.nav-bar {
+  color: var(--main-dark-blue);
+  margin: 0 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-links {
+    display: flex;
+}
+nav a:hover {
+    color: var(--main-light-blue);
+    transition: 0.5s;
+}
+/* End of Nav bar styling */
+
+/*Container styling*/
+.container {
+    margin-top: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bg-color {
+    font-size: 1.2rem;
+    padding: 0.80rem;
+    width: 38rem;
+    letter-spacing: 0.25rem;
+    background: var(--main-black);
+    font-family: var(--main-ff);
+    border-radius: 10px;
+}
+#color {
+    color: var(--main-light-blue);
+    font-size: 2.5rem;
+}
+/* End of container styling */
+
+/* Button styling */
+#click-me {
+    margin-top: 2rem;
+    font-family: var(--main-ff);
+    background-color: transparent;
+    border-color: var(--main-dark-blue);
+    border-radius: 10px;
+    width: 9rem;
+    color: var(--main-black);
+    padding: 0.95rem;
+    font-size: 1rem;
+    letter-spacing: 0.25rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+/* button hover animation */
+#click-me:hover {
+    transition: 0.5s;
+    background-color: var(--main-black);
+    color: var(--main-white);
+    
+}
+/* End of button styling */
